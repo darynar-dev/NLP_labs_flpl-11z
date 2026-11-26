@@ -1,0 +1,25 @@
+# Віртуальні середовища
+.venv/
+venv/
+env/
+
+# Кеш та скомпільовані файли Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# Важкі NLP-моделі та вектори 
+*.bin
+*.vec
+*.pt
+*.pth
+*.safetensors
+*.model
+models/
+stanza_resources/
+nltk_data/
+
+# Локальні налаштування VS Code
+.vscode/
