@@ -2,8 +2,11 @@ import nltk
 nltk.download('punkt')
 nltk.download('punkt_tab')
 from nltk.tokenize import word_tokenize, sent_tokenize
+from pathlib import Path
 
-with open("text.txt", "r", encoding="utf-8") as f:
+
+directory = Path(__file__).resolve().parent
+with open(directory/"text.txt", "r", encoding="utf-8") as f:
     loaded_text = f.read()
  
 sentences = sent_tokenize(loaded_text)
